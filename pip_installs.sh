@@ -38,3 +38,13 @@ pip install bottleneck
 pip install pandas
 pip install h5py
 pip install tables
+
+# some stuff from bayes hack
+pip install geojson
+pip install descartes
+pip install shapely
+pip install tifffile
+pip install rasterio
+pip install fiona
+pip install affine
+pip install tqdm

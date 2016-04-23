@@ -39,3 +39,6 @@ brew install postgres
 brew install node
 npm install -g coffee-script
 brew install cake
+
+# bayes hack stuff: geo
+brew install gdal
