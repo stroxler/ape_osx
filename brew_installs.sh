@@ -34,3 +34,8 @@ brew install gradle
 
 # databases
 brew install postgres
+
+# coffeescript (plus node, which is probably good for other stuff)
+brew install node
+npm install -g coffee-script
+brew install cake
