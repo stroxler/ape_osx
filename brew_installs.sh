@@ -37,8 +37,13 @@ brew install postgres
 
 # coffeescript (plus node, which is probably good for other stuff)
 brew install node
+brew install npm
 npm install -g coffee-script
 brew install cake
 
 # bayes hack stuff: geo
 brew install gdal
+
+# xanadu dependencies
+brew install dynamodb-local
+brew install redis
