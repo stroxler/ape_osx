@@ -47,3 +47,6 @@ brew install gdal
 # xanadu dependencies
 brew install dynamodb-local
 brew install redis
+
+brew install fzf
+/usr/local/opt/fzf/install
