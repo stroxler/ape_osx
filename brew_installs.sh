@@ -44,9 +44,12 @@ brew install cake
 # bayes hack stuff: geo
 brew install gdal
 
-# xanadu dependencies
-brew install dynamodb-local
-brew install redis
+# get an updated vim (system vim is 7.3 = old)
+#  NOTE: neovim is worth considering
+brew install vim
 
+# search stuff 
+brew install ack
+brew install ag
 brew install fzf
 /usr/local/opt/fzf/install
