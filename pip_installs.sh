@@ -19,6 +19,9 @@ pip install ipython
 pip install pudb
 pip install line_profiler
 
+# ipython extensions
+pip install grasp
+
 # basic (non-data-science) packages
 pip install requests
 pip install sh
@@ -27,7 +30,13 @@ pip install pyyaml
 pip install sqlalchemy
 pip install psycopg2
 pip install Flask
-pip install Flask-Cake  # (coffescript for flask)
+pip install click
+
+# my important utility packages
+pip install inspectcall
+pip install calldecorators
+pip install tdxutil
+pip install clickutil
 
 # numerical and data python
 pip install numpy
@@ -39,12 +48,14 @@ pip install pandas
 pip install h5py
 pip install tables
 
-# some stuff from bayes hack
-pip install geojson
-pip install descartes
-pip install shapely
-pip install tifffile
-pip install rasterio
-pip install fiona
-pip install affine
-pip install tqdm
+# # some stuff from bayes hack and delta 2016
+# pip install geojson
+# pip install descartes
+# pip install shapely
+# pip install tifffile
+# pip install rasterio
+# pip install fiona
+# pip install affine
+# pip install tqdm
+# pip install Flask-Cake  # (coffescript for flask)
+
