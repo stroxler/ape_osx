@@ -25,7 +25,7 @@ brew tab homebrew/science
 brew update && brew upgrade
 brew install hdf5
 
-# java essentials
+# jvm (java, scala, clojure) essentials
 brew cask install java # note that the jdk itself requires cask
 brew install scala
 brew install leiningen
@@ -35,14 +35,12 @@ brew install gradle
 # databases
 brew install postgres
 
-# coffeescript (plus node, which is probably good for other stuff)
+# node.js
 brew install node
 brew install npm
-npm install -g coffee-script
-brew install cake
 
-# bayes hack stuff: geo
-brew install gdal
+# google drive api access
+brew install gdrive
 
 # get an updated vim (system vim is 7.3 = old)
 #  NOTE: neovim is worth considering
@@ -53,3 +51,12 @@ brew install ack
 brew install ag
 brew install fzf
 /usr/local/opt/fzf/install
+
+# optional installs (uncomment to run)
+
+## # bayes hack stuff: geo
+## brew install gdal
+
+## # coffeescript tools (also look at Flask-Cake if you need this)
+## npm install -g coffee-script
+## brew install cake

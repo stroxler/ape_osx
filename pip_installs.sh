@@ -31,6 +31,7 @@ pip install sqlalchemy
 pip install psycopg2
 pip install Flask
 pip install click
+pip install ruamel.yaml
 
 # my important utility packages
 pip install inspectcall
