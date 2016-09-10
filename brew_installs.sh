@@ -54,6 +54,9 @@ brew install fzf
 
 # optional installs (uncomment to run)
 
+## # sometimes people wrap clojurescript repls in rlwrap
+## brew install rlwrap
+
 ## # bayes hack stuff: geo
 ## brew install gdal
 
