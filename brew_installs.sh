@@ -29,6 +29,7 @@ brew install hdf5
 brew cask install java # note that the jdk itself requires cask
 brew install scala
 brew install leiningen
+brew install boot-clj
 brew install maven
 brew install gradle
 

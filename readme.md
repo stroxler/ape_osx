@@ -35,6 +35,11 @@ but here are a list of some of the most important:
     behavior to allow emacs-style behavior. Change it to `Esc+` (importantly,
     *don't* change it to `Meta`... this makes sense but does the wrong
     thing)
+  - also in iterm preferences -> profiles, set up the directory for new
+    sessions (this is on the general tab). You probably want to say use the
+    previous session, which makes iterm behave more like terminal, although
+    you could alternatively set a default working directory, which needn't
+    be $HOME (on most of my machines, /kode would be the logical choice)
   - there are some hoops to jump through to set the jvm to use in intellij,
     and pretty analogous steps for setting the python "SDK" for any given
     python project. I'll try to remember to add details the next time I
