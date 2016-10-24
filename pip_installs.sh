@@ -49,6 +49,16 @@ pip install pandas
 pip install h5py
 pip install tables
 
+# ipython notebook with vim bindings
+# NOTE sometime soonish this will need to be done using pip3
+pip intall --upgrade jupyter
+pip intall --upgrade notebook
+mkdir -p "$(jupyter --data-dir)"/nbextensions
+cd "$(jupyter --data-dir)"/nbextensions || exit
+git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
+chmod -R go-w vim_binding
+jupyter-nbextension enable vim_binding/vim_binding
+
 # # some stuff from bayes hack and delta 2016
 # pip install geojson
 # pip install descartes
