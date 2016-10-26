@@ -7,7 +7,6 @@ pip install virtualenv
 pip install virtualenvwrapper
 pip install sphinx
 pip install flake8
-pip install nose
 
 # system tools that are pip-able
 pip install grin
@@ -18,6 +17,11 @@ pip install tornado
 pip install ipython
 pip install pudb
 pip install line_profiler
+
+# testing and related
+pip install nose
+pip install pytest
+pip install pytest-pudb
 
 # ipython extensions
 pip install grasp
