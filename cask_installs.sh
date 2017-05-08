@@ -13,6 +13,8 @@ brew cask install macvim
 brew cask install slack
 brew tap caskroom/versions
 brew cask install intellij-idea-ce
+brew cask install sourcetree
+brew cask install stay
 
 # Git tool
 #    Notes: git-cola is the git gui, start it from cli

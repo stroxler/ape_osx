@@ -18,10 +18,16 @@ pip install ipython
 pip install pudb
 pip install line_profiler
 
-# testing and related
+# testing and related, editor support
 pip install nose
 pip install pytest
 pip install pytest-pudb
+pip install pytest-instafail
+pip install pytest-logger
+pip install pytest-xdist
+# note: for all the bells and whistles (you don't really want to combine
+# all these flags, I'm just demoing them), run:
+# py.test -f -n 2 -s --instafail --pudb
 
 # ipython extensions
 pip install grasp
@@ -52,6 +58,9 @@ pip install bottleneck
 pip install pandas
 pip install h5py
 pip install tables
+
+# anaconda_mode, to support spacemacs
+pip install anaconda-mode
 
 # ipython notebook with vim bindings
 # NOTE sometime soonish this will need to be done using pip3

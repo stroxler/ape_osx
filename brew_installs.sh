@@ -45,7 +45,10 @@ brew install gdrive
 
 # get an updated vim (system vim is 7.3 = old)
 #  NOTE: neovim is worth considering
-brew install vim
+brew tap neovim/neovim
+brew tap rogual/neovim-dot-app
+brew install neovim-dot-app
+brew linkapps neovim-dot-app
 
 # search stuff 
 brew install ack
