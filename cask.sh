@@ -14,7 +14,7 @@ brew cask install kitty   # terminal emulator: use for vim
 
 # basic development tools
 brew cask install docker
-brew cask install iterm2
+brew cask install iterm2 & curl https://raw.githubusercontent.com/arcticicestudio/nord-iterm2/develop/src/xml/Nord.itermcolors > ~/Nord.itermcolors
 
 # ide and git gui devtools
 brew cask install intellij-idea-ce

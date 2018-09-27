@@ -72,6 +72,18 @@ I'm hoping to improve `confar` a lot going forward.
 
 # Other Manual Steps
 
+## Iterm colors
+
+Open iterm and do Preferences > Profiles > Colors
+
+There, you can set the color theme using a dropdown at bottom-right. Of the
+preset themes, only solarized is much good, but I don't really like emacs
+and terminal having the same colors.
+
+You can also import colors from this same dropdown. As part of the download
+script I pulled in the `Nord` theme (in `~`), which is a pretty nice one that
+doesn't conflict with what I use in any editor.
+
 ## Setting up chrome
 
 See [chrome.md](./chrome.md) for a description of my favorite
