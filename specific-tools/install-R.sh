@@ -1,3 +1,5 @@
+brew cask install rstudio
+
 R -e 'install.packages("devtools")'
 R -e 'install.packages("roxygen2")'
 R -e 'install.packages("dplyr")'

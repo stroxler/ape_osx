@@ -1,46 +1,90 @@
-# Setup scripts for OSX (started April 2016)
+# Initial manual steps
 
-These scripts set up a basic dev environment on OSX
-(R + Rstudio, basic pydata stack, clojure / java / scala).
+## System Preferences stuff
 
-First you need to install homebrew (google for the most
-up-to-date instructions), then you want to run
+Get trackpad working:
+ - Trackpad tap to click is under Settings -> Mouse and Trackpad
+ - Three-finger drag is under Settings -> Accessiblity -> Mouse and Trackpad
+ - go to Settings -> Mission Control and disable separate spaces for separate
+   displays
+ - add an additional space by entering mission control (ctl + up arrow) and
+   clicking "+"
+
+
+## Copy over iTunes music from an external hard drive (if you want)
+
+Open Terminal.app and run
 ```
-./brew_installs.sh
-./cask_installs.sh
-./R_installs.sh
-./pip_installs.sh
-./get_iterm_colors.sh
+rm -rf ~/Media/iTunes
+cp -R /Media/<Drive_Name>/<path_to_iTunes> ~/Media/iTunes
 ```
 
-The scripts are not heavily tested so you may run into
-an error or two. They all have `set -x` set, so if you do
-see any errors you should be able to track down which
-software failed to install.
+## Bootstrap homebrew
 
-I also do not guarantee that the R installs will show up
-when using RStudio; I have occasionally had issues on OSX
-with command line R and RStudio looking for packages on
-different paths, and my R knowledge / use is limited enough
-that I have never figured out the details of why that happens.
+Go to the homebrew website for the latest command (it can occasionally
+change) and run that. It will prompt for your password more than once,
+and take a while because of the xcode install.
 
-# manual setup
+## Get basic homebrew packages
 
-There are a lot of manual steps you'll need to take gradually,
-but here are a list of some of the most important:
-  - in iterm, open up preferences -> profiles, and pick a color theme you like.
-    My suggestion is alien blood, but the repo that gets cloned by
-    get_iterm_colors.sh has tons of cool color themes
-  - also in iterm preferences -> profiles, you need to set the alt key
-    behavior to allow emacs-style behavior. Change it to `Esc+` (importantly,
-    *don't* change it to `Meta`... this makes sense but does the wrong
-    thing)
-  - also in iterm preferences -> profiles, set up the directory for new
-    sessions (this is on the general tab). You probably want to say use the
-    previous session, which makes iterm behave more like terminal, although
-    you could alternatively set a default working directory, which needn't
-    be $HOME (on most of my machines, /kode would be the logical choice)
-  - there are some hoops to jump through to set the jvm to use in intellij,
-    and pretty analogous steps for setting the python "SDK" for any given
-    python project. I'll try to remember to add details the next time I
-    find myself doing it
+Run `bash ./brew.sh` to get the most essential
+
+## Get my personal config set up
+
+NOTE: with some luck these instructions will soon be out of date,
+because I want to replace `confar-v0` with something nicer and
+also split my `stroxler/config` repo into several domain-specific
+repositories. But this is current as of September 2018.
+
+First, make sure you've installed stack.
+
+Then:
+```
+git clone git@github.com:stroxler/config.git
+git clone git@github.com:stroxler/confar-v0.git
+
+cd confar-v0
+stack install
+```
+
+Now you should have `confar` installed in `.local/bin`. You can bootstrap
+the config with
+```
+cd ~
+.local/bin/confar-v0 -s ~/config -d ~
+```
+
+Going forward, `.local/bin` will be on your `PATH`, so you can just use
+```
+cd ~
+confar-v0 -s <source_repo> -d ~
+```
+when you want to update. Note that confar isn't the most robust program
+at this point (it was a hack project, so this isn't surprising). The two
+things that have come up thus far are that
+  - it seems to be sensitive to the directory you're in some of the time
+    (in particular when I was in `~/config` and tried to run it I ran
+    into issues)
+  - it cannot clean up after itself, so be sure to manually delete symlinks
+    in ~ whenever you move files around
+
+I'm hoping to improve `confar` a lot going forward.
+
+# Other Manual Steps
+
+## Setting up chrome
+
+See [chrome.md](./chrome.md) for a description of my favorite
+
+## Handling security flags when opening brew casks via spotlight
+
+If you download an app from `brew cask` that you trust, but
+generates an error about it being from an unidentified
+developer when you try to open using spotlight, run
+```
+open /Applications
+```
+to get a Finder window, then right-click and "Open" the app,
+which allows you to override the security protections. Obviously
+only do this for apps you trust.
+
