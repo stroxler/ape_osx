@@ -1,3 +1,6 @@
+set -e
+set -x
+
 # basic ui stuff
 brew cask install clipy
 brew cask install spectacle

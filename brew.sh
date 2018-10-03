@@ -1,3 +1,6 @@
+set -e
+set -x
+
 # install basic tools
 brew install ag tree neovim fzf git wget z
 
