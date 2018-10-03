@@ -1,8 +1,9 @@
+#!/usr/bin/env bash
 set -e
 set -x
 
 # install basic tools
-brew install ag tree neovim fzf git wget z
+brew install ag tree neovim fzf git wget z vim
 
 # install some basic system libraries and such
 brew install openssl qt zmq postgres mysql
