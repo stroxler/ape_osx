@@ -18,8 +18,13 @@ brew cask install kitty   # terminal emulator: use for vim
 
 # basic development tools
 brew cask install docker
-brew cask install iterm2 & curl https://raw.githubusercontent.com/arcticicestudio/nord-iterm2/develop/src/xml/Nord.itermcolors > ~/Nord.itermcolors
 
+# iterm, and a couple of color themes
+#   (With this you have solarized light/dark, nord, gruvbox)
+brew cask install iterm2
+mkdir ~/iterm2-colors
+curl https://raw.githubusercontent.com/arcticicestudio/nord-iterm2/develop/src/xml/Nord.itermcolors > ~/iterm2-colors/Nord.itermcolors
+curl https://raw.githubusercontent.com/morhetz/gruvbox-contrib/master/iterm2/gruvbox-dark.itermcolors > ~/iterm2-colors/Gruvbox.itermcolors
 # ide and git gui devtools
 brew cask install intellij-idea-ce
 brew cask install sourcetree
