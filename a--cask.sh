@@ -29,3 +29,6 @@ curl https://raw.githubusercontent.com/chriskempson/base16-iterm2/master/base16-
 # ide and git gui devtools
 brew cask install intellij-idea-ce
 brew cask install sourcetree
+
+# music stuff
+brew cask install lilypond simplesynth
