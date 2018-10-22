@@ -31,4 +31,7 @@ brew cask install intellij-idea-ce
 brew cask install sourcetree
 
 # music stuff
-brew cask install lilypond simplesynth
+brew cask install lilypond simplesynth frescobaldi
+
+# hot-reloading pdf viewer (good for latex, music, pandoc, etc)
+brew cask install skim
