@@ -4,6 +4,8 @@ set -x
 
 # install basic tools
 brew install ag tree neovim fzf git wget z vim
+brew tap juretta/spy
+brew install spy
 
 # install some basic system libraries and such
 brew install openssl qt zmq postgres mysql
