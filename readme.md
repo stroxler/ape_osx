@@ -63,8 +63,6 @@ You can also import colors from this same dropdown. As part of the download
 script I pulled in the `Nord` theme (in `~`), which is a pretty nice one that
 doesn't conflict with what I use in any editor.
 
-# Other manual steps
-
 ## Open up key apps, to get them bootstrapped
 
 The really important ones are
@@ -113,3 +111,45 @@ open /Applications
 to get a Finder window, then right-click and "Open" the app,
 which allows you to override the security protections. Obviously
 only do this for apps you trust.
+
+## VsCode initialization
+
+Install the vim extension, since without this I can't type haha.
+
+### rust - vscode is very good for this, maybe the best
+
+Install the `Rust (rls)` and `Rusty Code` extensions, which between them
+make vscode pretty good for rust development. I'd say spacemacs is also
+pretty solid; the one big advantage of vscode is that it shows the type under
+cursor on hover, which I have thus far had trouble getting from spacemacs.
+
+### resonml - honestly thus far vscode isn't so great, but keep trying
+
+Probably install the reaonml plugin. As of me writing (late October 2018),
+my experience is that it doesn't seem to actually work - I use emacs for
+ocaml, and so far nothing is very good for reasonml. But the tutorials claim
+it works well, which means that there's probably either a temporary issue
+or that my setup is subtly incorrect.
+
+### more to try out (if I get frustrated with spacemacs/spacevim)
+
+
+#### Scala
+
+I really want to try out ensime; the `Scala Language Server` might be the
+best way for me to try it out quickly (neovim might also be good) because
+ensime and spacemacs are incompatible.
+
+Note that if I decide ensime rocks but I'd rather not use vscode, I could make
+a dedicated emacs environment, or try to get neovim+ensime working.
+
+... There's actually a second scala ide support package, the `Scala (sbt)`
+plugin, which apparently uses sbt. I have no idea if it's much good. It has
+a lot of stars, fwiw.
+
+#### Haskell
+
+Thus far spaceemacs + haskell has worked decently for me, but I sometimes get
+confused and I do find the type hints to be a little less than I want (ocaml
+spacemacs is a bit better). If I start writing a lot of haskell, it may be
+worth trying out the haskell language server.
