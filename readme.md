@@ -123,6 +123,10 @@ make vscode pretty good for rust development. I'd say spacemacs is also
 pretty solid; the one big advantage of vscode is that it shows the type under
 cursor on hover, which I have thus far had trouble getting from spacemacs.
 
+If you have any issues, as of Fall of 2018
+[this video](https://www.youtube.com/watch?v=zSIZB8WWa-o&list=PLJbE2Yu2zumDF6BX6_RdPisRVHgzV02NW&index=19)
+was a pretty good intro to rust tooling setup.
+
 ### resonml - honestly thus far vscode isn't so great, but keep trying
 
 Probably install the reaonml plugin. As of me writing (late October 2018),
