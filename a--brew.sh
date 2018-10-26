@@ -2,6 +2,10 @@
 set -e
 set -x
 
+# make a ~/-src directory that install-from-source can use.
+# this isn't really homebrew-related but whatever
+mkdir -p ~/-src
+
 # install basic tools
 brew install ag tree neovim fzf git wget z vim
 brew tap juretta/spy
