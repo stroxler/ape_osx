@@ -12,7 +12,7 @@ brew tap juretta/spy
 brew install spy
 
 # install some basic system libraries and such
-brew install openssl qt zmq postgres mysql
+brew install openssl qt zmq postgres mysql zlib
 
 # install basic C-world development tools and related stuff
 brew install cmake doxygen fswatch
