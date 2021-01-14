@@ -3,35 +3,40 @@ set -e
 set -x
 
 # basic ui stuff
-brew cask install clipy
-brew cask install spectacle
-brew cask install flux
+brew install --cask clipy
+brew install --cask spectacle
+brew install --cask flux
 
 # browsers
-brew cask install google-chrome
-brew cask install firefox
+set +e  # in case browsers are preinstalled
+brew install --cask google-chrome
+brew install --cask firefox
+set -e
 
 # editors
-brew cask install visual-studio-code
-brew cask install emacs
-brew cask install kitty   # terminal emulator: use for vim
+brew install --cask visual-studio-code
+brew install --cask emacs
+brew install --cask kitty   # terminal emulator: use for vim
 
 # basic development tools
-brew cask install docker
+brew install --cask docker
 
 # iterm, and a couple of color themes
 #   (With this you have solarized light/dark, nord, gruvbox, sulpherpool)
-brew cask install iterm2
-mkdir ~/iterm2-colors
+brew install --cask iterm2
+mkdir -p ~/iterm2-colors
 curl https://raw.githubusercontent.com/arcticicestudio/nord-iterm2/develop/src/xml/Nord.itermcolors > ~/iterm2-colors/Nord.itermcolors
 curl https://raw.githubusercontent.com/morhetz/gruvbox-contrib/master/iterm2/gruvbox-dark.itermcolors > ~/iterm2-colors/Gruvbox.itermcolors
 curl https://raw.githubusercontent.com/chriskempson/base16-iterm2/master/base16-ateliersulphurpool.dark.itermcolors > ~/iterm2-colors/B16-sulpherpool.itermcolors
 # ide and git gui devtools
-brew cask install intellij-idea-ce
-brew cask install sourcetree
+## brew install --cask intellij-idea-ce
+brew install --cask sourcetree
 
 # music stuff
-brew cask install lilypond simplesynth frescobaldi
+brew install --cask lilypond simplesynth frescobaldi
 
 # hot-reloading pdf viewer (good for latex, music, pandoc, etc)
-brew cask install skim
+brew install --cask skim
+
+# some logic tools
+brew install --cask alloy
