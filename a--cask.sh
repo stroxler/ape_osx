@@ -15,7 +15,7 @@ set -e
 
 # editors
 brew install --cask visual-studio-code
-brew install --cask emacs
+brew install --cask emacs --no-quarantine
 brew install --cask kitty   # terminal emulator: use for vim
 
 # basic development tools
