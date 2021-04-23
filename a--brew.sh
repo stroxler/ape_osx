@@ -10,7 +10,7 @@ brew install stack opam
 mkdir -p ~/-src
 
 # install basic tools
-brew install ag tree neovim fzf git wget z vim
+brew install ag tree neovim fzf git wget z vim coreutils fd
 brew tap juretta/spy
 brew install spy
 
