@@ -25,6 +25,7 @@ function get_iterm_colors () {
 }
 
 
+# The iTerm2-Color-Schemes repo has most of the themes I would want
 get_iterm_colors https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Seafoam%20Pastel.itermcolors seafoam-pastel
 get_iterm_colors https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Seafoam%20Pastel.itermcolors soft-server
 get_iterm_colors https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Spacedust.itermcolors spacedust
@@ -48,3 +49,7 @@ get_iterm_colors https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Scheme
 get_iterm_colors https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/SeaShells.itermcolors seashells
 get_iterm_colors https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Solarized%20Dark%20Higher%20Contrast.itermcolors solarized-dark-higher-contrast
 get_iterm_colors https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Solarized%20Dark%20-%20Patched.itermcolors solarized-dark-patched
+get_iterm_colors https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/AtelierSulphurpool.itermcolors atelier-sulphurpool
+# There are just a couple of other themes I like enough to pull
+get_iterm_colors https://raw.githubusercontent.com/thekelvinliu/stllrzd/master/term/stllrzd.itermcolors stllrzd.itermcolors
+
